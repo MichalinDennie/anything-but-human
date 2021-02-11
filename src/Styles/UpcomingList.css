@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+.upcominglist {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* background-color: #000; */
+}
+
+.upComingHeading {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 40px;
+    /* padding: 5px; */
+    /* border: 1px solid; */
+    border-bottom: 1px solid teal;
+    border-top: 1px solid teal;
+    background-color: #000;
+}
+
+.upComingHeadingText {
+    color: #fff;
+    background-color: transparent;
+    font-family: 'Lora', serif;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+.listcontainer {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #000;
+    /* margin-bottom: 100px; */
+}
+
+.card {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    height: 300px;
+    margin: 50px 20px;
+    border: 1px solid #fff;
+}
+
+.cardImage {
+    max-width: 250px;
+    width: auto;
+    height: 100%;
+}

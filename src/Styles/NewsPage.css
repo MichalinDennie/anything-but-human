@@ -1,0 +1,87 @@
+
+.headerImageLogo {
+       width: 60%;
+       margin: 40px auto;
+   }
+   
+   .imagebanner {
+       width: 100%;
+   }
+   .News {
+       justify-content: center;
+       align-items: center;
+       height: auto;
+       /* background-color: #000; */
+   }
+   
+   .NewsHeading {
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       display: flex;
+       margin: 30px;
+       /* padding: 5px; */
+       /* border: 1px solid; */
+       background-color: #000;
+       border-bottom: 1px solid teal;
+       border-top: 1px solid teal;
+   }
+   
+   .NewsHeadingText {
+       color: #fff;
+       background-color: transparent;
+       text-transform: uppercase;
+       font-family: 'Lora', serif;
+       padding-top: 20px;
+       padding-bottom: 12px;
+   }
+
+   
+.NewsContent {
+       width: 90%;
+       margin: 0 auto;
+   }
+   
+   .NewsCards {
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       display: flex;
+       margin: 0 auto;
+       margin-bottom: 50px;
+   }
+   
+   .card1 {
+       width: 350px;
+       /* flex-wrap: wrap; */
+       margin: 20px;
+   }
+   
+   .card2 {
+       width: 350px;
+       flex-wrap: wrap;
+       margin: 20px;
+   }
+   
+   .card3 {
+       width: 350px;
+       flex-wrap: wrap;
+       margin: 20px;
+   }
+   
+   .HeadingNews {
+       /* margin-bottom: 40px; */
+       padding-top: -15px;
+       padding-left: 5px;
+       border-bottom: 1px solid teal;
+   }
+   
+   .HeadingText {
+       color: teal;
+   }
+   
+   .middleContent {
+       color: #fff;
+       padding: 10px;
+   }

@@ -1,0 +1,79 @@
+.OverviewContent{
+       display: flex;
+       width: 100%;
+       overflow: hidden;
+}
+.OverViewImage{
+       height: 500px;
+       width: 450px;
+       border: 1px solid teal;
+       margin: 80px 100px;
+       padding: 20px;
+}
+.productInfo{
+       margin: 80px 0px;
+}
+.OverviewHeading{
+       color: teal;
+       width: 100%;
+       padding-bottom: 10px;
+       margin-bottom: 20px;
+       border-bottom: 1px solid teal;
+}
+.imagediv{
+       color: #fff;
+}
+.OverviewPrice{
+       color: #fff;
+       font-size: 20px;
+       padding: 10px 15px;
+}
+.OverviewSize{
+       background-color: #fff;
+       width: 40%;
+       font-size: 18px;
+       padding: 15px 20px;
+       outline: none;
+       border-radius: 5px;
+       margin: 10px 0px;
+       
+}
+.stockIndicator{
+       width: 100%;
+       padding: 15px 0px;
+}
+.IndicatorText{
+       padding-left: 10px;
+}
+.OverviewOptions{
+       background-color: #fff;
+       width: 40%;
+       border-radius: 5px;
+       font-size: 18px;
+       padding: 15px 20px;
+}
+.OverviewQuantity{
+       background-color: #fff;
+       width: 20%;
+       font-size: 18px;
+       padding: 10px 15px;
+       outline: none;
+       border-radius: 5px;
+       margin-bottom: 50px;
+}
+.addCart{
+       width: 100%;
+       color: #fff;
+       padding: 15px;
+       border: 1px solid teal;
+       outline: none;
+       transition: .5s ease all;
+       margin: 10px 0px;
+       background: transparent;
+       border-radius:  6px;
+}
+.addCart:hover{
+       background-color: teal;
+       border: 2px solid teal;
+       font-weight: bold;
+}
