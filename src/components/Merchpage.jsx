@@ -3,28 +3,27 @@ import '../Styles/MerchPage.css'
 import Logo from "../Images/LogoImage.png";
 import { Link } from "react-router-dom"
 import { connect, useDispatch, useSelector } from "react-redux";
-// import axios from 'axios'
+import axios from 'axios'
 import Products from './Products';
 import Footer from './Footer';
 import { listProducts } from '../redux/Action/action';
 // import products from './Products';
 
-
 export default function Merchpage(props) {
-
-       const dispatch = useDispatch();
-       const ProductList = useSelector((state) => state.productList)
+       const [products, setProducts] = useState([])
+       // const dispatch = useDispatch();
+       // const ProductList = useSelector((state) => state.productList.products)
        // const products = ProductList;
-       console.log(ProductList)
-       // useEffect(() => {
-       //        // const fetchData = async () => {
-       //        //        const { data } = await axios.get('/api/product')
-       //        //        setProducts(data);
-       //        // }
-       //        // fetchData();
-       //        dispatch(listProducts())
-       // }, [dispatch])
-       console.log(props.products)
+       // console.log(ProductList)
+       useEffect(() => {
+              const fetchData = async () => {
+                     const { data } = await axios.get('/api/product')
+                     setProducts(data);
+              }
+              fetchData();
+              // dispatch(listProducts())
+       }, [])
+       console.log(products)
        return (
               <>
                      <div className="MerchContent">
@@ -51,11 +50,11 @@ export default function Merchpage(props) {
 
                             <div className="productCardMainContainer">
                                    <div className="productContentContainer">
-                                          {/* {products.map((data) => {
+                                          {products.map((data) => {
                                                  return (
                                                         <Products key={data.id} data={data} />
                                                  )
-                                          })} */}
+                                          })}
                                    </div>
                             </div>
                      </div>

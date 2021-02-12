@@ -20,7 +20,8 @@ export default function Home() {
                                           <Link className="BTNsLink" smooth to="#video">Videos</Link>
                                    </button>
                                    <button className="BTNs" >
-                                          <Link className="BTNsLink" smooth to="#merch">Merch</Link>
+                                          <a className="BTNsLink" target="_blank" href="https://www.freshbakedtees.com/anything-but-human">Merch</a>
+
                                    </button>
                             </BrowserRouter>
                      </div>
