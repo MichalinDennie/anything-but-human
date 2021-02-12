@@ -23,7 +23,7 @@ export default function AppRouter() {
             <Route exact path="/" component={Music} />
             <Route exact path="/" component={Movie} />
             <Route exact path="/" component={News} />
-            {/* <Route exact path="/" component={Merch} /> */}
+            <Route exact path="/" component={Merch} />
             <Route exact path="/" component={Footer} />
             <Route exact path="/news-page" component={NewsPage} />
             <Route exact path="/merch-page" component={Merchpage} />

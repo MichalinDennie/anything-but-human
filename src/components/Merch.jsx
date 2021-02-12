@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import '../Styles/Merch.css'
 // import image from '../Images/productImage.jpg'
 
-function Merch(props) {
-       console.log(props.image)
+export default function Merch(props) {
+       // console.log(props.image)
        return (
               <div className="MerchContainer" id="merch">
                      <div className="MerchHeading">
@@ -16,39 +16,39 @@ function Merch(props) {
                             <div className="productContentContainer">
                                    <div className="productCards">
                                           <div className="imageSide">
-                                                 <img src={props.product1.image} className="image" alt="" />
+                                                 <img src="https://firebasestorage.googleapis.com/v0/b/bandproject-e8825.appspot.com/o/t-shirt%207..png?alt=media&token=20964b30-6cb3-4718-8e49-f3243cadc2b0" className="image" alt="" />
                                           </div>
                                           <div className="nameSide">
-                                                 <h3>{props.product1.name}</h3>
+                                                 <h3>firstProduct</h3>
                                           </div>
                                           <div className="priceSide">
-                                                 ${props.product1.price}
+                                                 $40
                                           </div>
-                                          <Link className="buyBtn" to={`/product/${props.product1.id}`}>Buy Now</Link>
+                                          <Link className="buyBtn" to={`/product/1`}>Buy Now</Link>
                                    </div>
                                    <div className="productCards">
                                           <div className="imageSide">
-                                                 <img src={props.product2.image} className="image" alt="" />
+                                                 <img src="https://firebasestorage.googleapis.com/v0/b/bandproject-e8825.appspot.com/o/t-shirt%2010..png?alt=media&token=2ec6041a-a979-456d-813c-ad6ba3e5ff04" className="image" alt="" />
                                           </div>
                                           <div className="nameSide">
-                                                 <h3>{props.product2.name}</h3>
+                                                 <h3>SecondProduct</h3>
                                           </div>
                                           <div className="priceSide">
-                                                 ${props.product2.price}
+                                                 $42
                                           </div>
-                                          <Link className="buyBtn" to={`/product/${props.product2.id}`}>Buy Now</Link>
+                                          <Link className="buyBtn" to={`/product/2`}>Buy Now</Link>
                                    </div>
                                    <div className="productCards">
                                           <div className="imageSide">
-                                                 <img src={props.product3.image} className="image" alt="" />
+                                                 <img src="https://firebasestorage.googleapis.com/v0/b/bandproject-e8825.appspot.com/o/t-shirt%2011..png?alt=media&token=a1643278-5e0b-4531-a50a-fcd7a907a5a9" className="image" alt="" />
                                           </div>
                                           <div className="nameSide">
-                                                 <h3>{props.product3.name}</h3>
+                                                 <h3>ThirdProduct</h3>
                                           </div>
                                           <div className="priceSide">
-                                                 ${props.product3.price}
+                                                 $45
                                           </div>
-                                          <Link className="buyBtn" to={`/product/${props.product3.id}`}>Buy Now</Link>
+                                          <Link className="buyBtn" to={`/product/3`}>Buy Now</Link>
                                    </div>
                             </div>
                             <div className="ViewAllBtn">
@@ -58,10 +58,10 @@ function Merch(props) {
               </div>
        )
 }
-const mapStateToProps = (state) => ({
-       product1: state.productState.products[0],
-       product2: state.productState.products[1],
-       product3: state.productState.products[2]
-})
+// const mapStateToProps = (state) => ({
+//        product1: state.productState.products[0],
+//        product2: state.productState.products[1],
+//        product3: state.productState.products[2]
+// })
 
-export default connect(mapStateToProps, null)(Merch)
+// export default connect(mapStateToProps, null)(Merch)
