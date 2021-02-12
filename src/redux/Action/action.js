@@ -1,17 +1,20 @@
 import Axios from "axios"
-import { CART_ADD_ITEMS } from "../../Constants/CartConstant";
+import { PRODUCT_LIST_FAIL, PRODUCT_LIST_REQUEST, PRODUCT_LIST_SUCCESS } from "../../Constants/productConstants";
 
-export const addToCart = (product_id, qty) => async (dispatch, getState) => {
-       // const { data } = await Axios.get(`/add-to-cart/${product_id}`);
+export const listProducts = () => async (dispatch) => {
        dispatch({
-              type: CART_ADD_ITEMS,
-              payload: {
-                     name: 'text',
-                     image: 'textImage',
-                     price: '$213',
-                     product: 'heavy',
-                     qty,
-              }
+              type: PRODUCT_LIST_REQUEST,
        })
-       console.log(product_id, qty)
+       try {
+              const { data } = await Axios.get("/api/product");
+              console.log(data)
+              dispatch({
+                     type: PRODUCT_LIST_SUCCESS, payload: data
+              })
+       }
+       catch (error) {
+              dispatch({
+                     type: PRODUCT_LIST_FAIL, payload: error.message
+              })
+       }
 }

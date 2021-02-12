@@ -2,10 +2,25 @@ import React from 'react'
 import Logo from "../Images/LogoImage.png";
 import Footer from './Footer'
 import "../Styles/NewsPage.css";
+import { Link } from 'react-router-dom';
 export default function Newspage() {
        return (
               <>
                      <div className="NewsPage">
+                            <div className="navigationbar" style={{ display: 'flex', justifyContent: 'center' }}>
+                                   <button className="BTNs" >
+                                          <Link className="BTNsLink" to="/news-page">News</Link>
+                                   </button>
+                                   <button className="BTNs" >
+                                          <Link className="BTNsLink" to="/">Music</Link>
+                                   </button>
+                                   <button className="BTNs" >
+                                          <Link className="BTNsLink" to="/">Videos</Link>
+                                   </button>
+                                   <button className="BTNs" >
+                                          <Link className="BTNsLink" to="/merch-page">Merch</Link>
+                                   </button>
+                            </div>
                             <div className="headerImageLogo">
                                    <img src={Logo} className="imagebanner" alt="" />
                             </div>
