@@ -1,9 +1,6 @@
 import React from 'react'
 import '../Styles/Music.css'
-import Gallery1 from "../Images/musicgallery1.jpg";
 import Gallery2 from "../Images/musicgallery2.jpg";
-import Gallery3 from "../Images/musicgallery3.jpg";
-import Gallery4 from "../Images/musicgallery4.jpg";
 export default function Music() {
        return (
               <div className="music" id="music">
@@ -13,12 +10,20 @@ export default function Music() {
                      <div className="ImageGallery">
                             <div className="imageCard">
                                    <div className="imgSection">
-                                          <img src={Gallery2} alt="" />
+                                          {/* <img src={Gallery2} alt="" className= /> */}
                                    </div>
                                    <div className="streamSection">
-                                          <select>
-                                                 <option></option>
-                                          </select>
+                                          <div className="Stream">
+                                                 <ul className="listContainer">
+                                                        <li className="list"><a href="">Stream</a>
+                                                               <ul>
+                                                                      <li className="co-list"><a target="_blank" href="https://open.spotify.com/artist/7BPsblsOFnvBDMsP5Mv7xR">Shoptify</a></li>
+                                                                      <li className="co-list"><a target="_blank" href="https://music.apple.com/us/artist/anything-but-human/1471603211">Apple Music</a></li>
+                                                               </ul>
+                                                        </li>
+                                                 </ul>
+                                          </div>
+
                                    </div>
                             </div>
                      </div>

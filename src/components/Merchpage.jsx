@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../Styles/MerchPage.css'
 import Logo from "../Images/LogoImage.png";
 import { Link } from "react-router-dom"
-import { connect, useDispatch, useSelector } from "react-redux";
+// import { connect, useDispatch, useSelector } from "react-redux";
 import axios from 'axios'
 import Products from './Products';
 import Footer from './Footer';
