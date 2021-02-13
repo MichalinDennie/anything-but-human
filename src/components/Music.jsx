@@ -11,22 +11,15 @@ export default function Music() {
                             <h1 className="MusicHeadingText">Music</h1>
                      </div>
                      <div className="ImageGallery">
-                            <div className="firstpartOfGallery">
-                                   <div className="WideImage">
-                                          <img className="galleryimage" src={Gallery1} alt="" />
+                            <div className="imageCard">
+                                   <div className="imgSection">
+                                          <img src={Gallery2} alt="" />
                                    </div>
-                                   <div className="shortimage">
-                                          <img className="galleryimage" src={Gallery2} alt="" />
+                                   <div className="streamSection">
+                                          <select>
+                                                 <option></option>
+                                          </select>
                                    </div>
-                            </div>
-                            <div className="secondpartOfGallery">
-                                   <div className="shortimage">
-                                          <img className="galleryimage" src={Gallery4} alt="" />
-                                   </div>
-                                   <div className="WideImage">
-                                          <img className="galleryimage" src={Gallery3} alt="" />
-                                   </div>
-
                             </div>
                      </div>
               </div>

@@ -11,7 +11,7 @@ import Merch from '../components/Merch'
 import Merchpage from '../components/Merchpage'
 import Footer from '../components/Footer'
 import ProductScreen from '../components/ProductOverView';
-import Login from '../Authentication/Login';
+import Login from '../Auth/Login';
 import CartScreen from '../components/CartScreen';
 import AddToCart from '../components/AddtoCart';
 

@@ -7,14 +7,33 @@
     align-items: center;
     height: auto;
 }
+.signUp{
+    color: teal;
+    font-weight: bold;
+    line-height: 100px;
+    /* padding: 5px; */
+    /* border: 1px solid ; */
+    border-color: teal;
+
+}
+.signUp:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.main{
+    display: flex;
+}
 
 .header {
-    /* line-height: 110px; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     display: flex;
     background-color: #000;
+}
+
+.side button{
+    border: transparent;
 }
 
 .BTNs {

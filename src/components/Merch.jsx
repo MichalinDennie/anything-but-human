@@ -16,7 +16,7 @@ export default function Merch(props) {
                             <div className="productContentContainer">
                                    <div className="productCards">
                                           <div className="imageSide">
-                                                 <img src="https://firebasestorage.googleapis.com/v0/b/bandproject-e8825.appspot.com/o/t-shirt%207..png?alt=media&token=20964b30-6cb3-4718-8e49-f3243cadc2b0" className="image" alt="" />
+                                                 <img src="#" className="image" alt="" />
                                           </div>
                                           <div className="nameSide">
                                                  <h3>firstProduct</h3>
@@ -25,30 +25,6 @@ export default function Merch(props) {
                                                  $40
                                           </div>
                                           <Link className="buyBtn" to={`/product/1`}>Buy Now</Link>
-                                   </div>
-                                   <div className="productCards">
-                                          <div className="imageSide">
-                                                 <img src="https://firebasestorage.googleapis.com/v0/b/bandproject-e8825.appspot.com/o/t-shirt%2010..png?alt=media&token=2ec6041a-a979-456d-813c-ad6ba3e5ff04" className="image" alt="" />
-                                          </div>
-                                          <div className="nameSide">
-                                                 <h3>SecondProduct</h3>
-                                          </div>
-                                          <div className="priceSide">
-                                                 $42
-                                          </div>
-                                          <Link className="buyBtn" to={`/product/2`}>Buy Now</Link>
-                                   </div>
-                                   <div className="productCards">
-                                          <div className="imageSide">
-                                                 <img src="https://firebasestorage.googleapis.com/v0/b/bandproject-e8825.appspot.com/o/t-shirt%2011..png?alt=media&token=a1643278-5e0b-4531-a50a-fcd7a907a5a9" className="image" alt="" />
-                                          </div>
-                                          <div className="nameSide">
-                                                 <h3>ThirdProduct</h3>
-                                          </div>
-                                          <div className="priceSide">
-                                                 $45
-                                          </div>
-                                          <Link className="buyBtn" to={`/product/3`}>Buy Now</Link>
                                    </div>
                             </div>
                             <div className="ViewAllBtn">

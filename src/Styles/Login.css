@@ -1,0 +1,89 @@
+.login{
+       width: 400px;
+       height: 450px;
+       margin: 0 auto;
+       border: 1px solid teal;
+       margin-top: 50px;
+       margin-bottom: 100px;
+}
+
+.LoginContainer{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.labels{
+       color: #fff;
+}
+.Inputs{
+       color: #fff;
+       border: 1px solid  teal;
+       width: 87%;
+       height: 40px;
+       margin: 0 auto;
+       align-items: center;
+       justify-content: center;
+       padding: 5px 15px;
+       margin-top: 5px;
+       font-size: 17px;
+       border-radius: 8px;
+       outline: none;
+   }
+.errorMessage{
+       color: red;
+       padding-left: 20px;
+       font-size: 15px;
+}
+.btnContainer{
+       margin-top: 50px;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       
+
+}
+.btnContainer button{
+    width: 90%;
+    height: 40px;
+    background-color: teal;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid silver;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.para{
+       color: #fff;
+       
+
+}
+.togglebtn{
+       
+
+       color: #fff;
+       font-weight: bold;
+       text-transform: uppercase;
+       cursor: pointer;
+}
+.togglebtn:hover{
+       cursor: pointer;
+       color: orange;
+       font-weight: bold;
+       text-transform: uppercase;
+}
+.headerImageLogo {
+       width: 60%;
+       margin: 0 auto;
+   }
+   
+   .imagebanner {
+       width: 100%;
+   }
