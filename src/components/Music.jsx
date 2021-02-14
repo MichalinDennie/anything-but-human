@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../Styles/Music.css'
 // import Gallery2 from "../Images/musicgallery2.jpg";
 export default function Music() {
@@ -23,7 +24,9 @@ export default function Music() {
                                                         </li>
                                                  </ul>
                                           </div>
-
+                                   </div>
+                                   <div className="ViewAllButn">
+                                          <Link to="/" className="viewAll">View All</Link>
                                    </div>
                             </div>
                      </div>

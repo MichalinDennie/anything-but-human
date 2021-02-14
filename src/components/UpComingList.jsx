@@ -5,6 +5,7 @@ import CardImage2 from "../Images/card2.jpg";
 import CardImage3 from "../Images/card3.jpg";
 import CardImage4 from "../Images/card4.jpg";
 import Modal from 'react-modal'
+import { Link } from 'react-router-dom';
 
 
 Modal.setAppElement("#root")
@@ -12,7 +13,7 @@ export default function UpComingShows() {
 
        const [modaIIsOpen1, setModaIIsOpen1] = useState(false)
        const [modaIIsOpen2, setModaIIsOpen2] = useState(false)
-       const [modaIIsOpen3, setModaIIsOpen3] = useState(true)
+       const [modaIIsOpen3, setModaIIsOpen3] = useState(false)
        const [modaIIsOpen4, setModaIIsOpen4] = useState(false)
        return (
               <>
@@ -34,7 +35,9 @@ export default function UpComingShows() {
                                           <img src={CardImage4} className="cardImage" alt="" />
                                    </div>
                             </div>
-
+                     </div>
+                     <div className="ViewAllBtn">
+                            <Link to="/" className="viewAll">View All</Link>
                      </div>
 
                      {/* ///////////////////////////////////////////////////////////// */}
