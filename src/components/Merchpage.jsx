@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import axios from 'axios'
 import Products from './Products';
 import Footer from './Footer';
-import { listProducts } from '../redux/Action/action';
+// import { listProducts } from '../redux/Action/action';
 // import products from './Products';
 
 export default function Merchpage(props) {

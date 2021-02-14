@@ -4,42 +4,16 @@ import CardImage1 from "../Images/card1.jpg";
 import CardImage2 from "../Images/card2.jpg";
 import CardImage3 from "../Images/card3.jpg";
 import CardImage4 from "../Images/card4.jpg";
-import ModalImage from "./Modal";
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
+import Modal from 'react-modal'
 
 
+Modal.setAppElement("#root")
 export default function UpComingShows() {
-       const [modalState, setModalState] = useState(false)
-       const useStyles = makeStyles((theme) => ({
-              modal: {
-                     display: 'flex',
-                     alignItems: 'center',
-                     justifyContent: 'center',
-              },
-              paper: {
-                     backgroundColor: theme.palette.background.paper,
-                     boxShadow: theme.shadows[5],
-                     padding: theme.spacing(2, 4, 3),
-              },
-       }));
-       const classes = useStyles();
-       const [open, setOpen] = React.useState(false);
 
-       const handleOpen = () => {
-              setOpen(true);
-       };
-
-       const handleClose = () => {
-              setOpen(false);
-       };
-
-       const modalHandler = () => {
-              setModalState(prev => !prev);
-       }
-
+       const [modaIIsOpen1, setModaIIsOpen1] = useState(false)
+       const [modaIIsOpen2, setModaIIsOpen2] = useState(false)
+       const [modaIIsOpen3, setModaIIsOpen3] = useState(true)
+       const [modaIIsOpen4, setModaIIsOpen4] = useState(false)
        return (
               <>
                      <div className="upcominglist" >
@@ -47,17 +21,16 @@ export default function UpComingShows() {
                                    <h1 className="upComingHeadingText">UPCOMING SHOWS</h1>
                             </div>
                             <div className="listcontainer">
-                                   <div className="card" onClick={handleOpen}>
+                                   <div className="card" onClick={() => setModaIIsOpen1(true)}>
                                           <img src={CardImage1} className="cardImage" alt="" />
                                    </div>
-                                   <ModalImage modalState={modalState} setModalState={setModalState} />
-                                   <div className="card" onClick={modalHandler}>
+                                   <div className="card" onClick={() => setModaIIsOpen2(true)}>
                                           <img src={CardImage2} className="cardImage" alt="" />
                                    </div>
-                                   <div className="card" onClick={handleOpen}>
+                                   <div className="card" onClick={() => setModaIIsOpen3(true)}>
                                           <img src={CardImage3} className="cardImage" alt="" />
                                    </div>
-                                   <div className="card" onClick={handleOpen}>
+                                   <div className="card" onClick={() => setModaIIsOpen4(true)}>
                                           <img src={CardImage4} className="cardImage" alt="" />
                                    </div>
                             </div>
@@ -66,23 +39,18 @@ export default function UpComingShows() {
 
                      {/* ///////////////////////////////////////////////////////////// */}
                      <div>
-                            <Modal
-                                   aria-labelledby="transition-modal-title"
-                                   aria-describedby="transition-modal-description"
-                                   className={classes.modal}
-                                   open={open}
-                                   onClose={handleClose}
-                                   closeAfterTransition
-                                   BackdropComponent={Backdrop}
-                                   BackdropProps={{
-                                          timeout: 400,
-                                   }}
-                            >
-                                   <Fade in={open}>
-                                          <div className={classes.paper}>
-                                                 <img src={CardImage1} alt="" className="modalImage" />
-                                          </div>
-                                   </Fade>
+                            <Modal isOpen={modaIIsOpen1} onRequestClose={() => setModaIIsOpen1(false)}>
+                                   <img src={CardImage1} style={{ height: '100%', display: "flex", margin: '0 auto' }} alt="" />
+                            </Modal>
+                            <Modal isOpen={modaIIsOpen2} onRequestClose={() => setModaIIsOpen2(false)}>
+                                   <img src={CardImage2} style={{ height: '100%', display: "flex", margin: '0 auto' }} alt="" />
+                            </Modal>
+
+                            <Modal isOpen={modaIIsOpen3} onRequestClose={() => setModaIIsOpen3(false)}>
+                                   <img src={CardImage3} style={{ height: '100%', display: "flex", margin: '0 auto' }} alt="" />
+                            </Modal>
+                            <Modal isOpen={modaIIsOpen4} onRequestClose={() => setModaIIsOpen4(false)}>
+                                   <img src={CardImage4} style={{ height: '100%', display: "flex", margin: '0 auto' }} alt="" />
                             </Modal>
                      </div>
               </>

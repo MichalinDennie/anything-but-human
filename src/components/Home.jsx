@@ -1,6 +1,5 @@
 import React from 'react'
 import '../Styles/Home.css'
-import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import Logo from "../Images/LogoImage.png";
 

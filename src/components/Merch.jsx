@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Link } from "react-router-dom";
 import '../Styles/Merch.css'
 // import image from '../Images/productImage.jpg'

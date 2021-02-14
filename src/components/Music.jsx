@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Styles/Music.css'
-import Gallery2 from "../Images/musicgallery2.jpg";
+// import Gallery2 from "../Images/musicgallery2.jpg";
 export default function Music() {
        return (
               <div className="music" id="music">

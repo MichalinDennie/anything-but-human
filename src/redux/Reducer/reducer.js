@@ -92,7 +92,7 @@
 import { PRODUCT_LIST_FAIL, PRODUCT_LIST_SUCCESS } from "../../Constants/productConstants";
 
 
-export const productListReducer = (state = { products: [] }, action) => {
+export const productListReducer = (state = {}, action) => {
     switch (action.type) {
         case (PRODUCT_LIST_SUCCESS):
             return ({

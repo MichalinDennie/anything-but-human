@@ -7,13 +7,11 @@ import Music from '../components/Music'
 import Movie from '../components/Movies'
 import News from '../components/News'
 import NewsPage from '../components/Newspage'
-import Merch from '../components/Merch'
 import Merchpage from '../components/Merchpage'
 import Footer from '../components/Footer'
 import ProductScreen from '../components/ProductOverView';
 import Login from '../Auth/Login';
 import CartScreen from '../components/CartScreen';
-import AddToCart from '../components/AddtoCart';
 
 export default function AppRouter() {
     return (
