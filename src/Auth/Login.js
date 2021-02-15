@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/Login.css'
 import firebase from '../Config/firebase'
+import Tick from '../Images/tick.png'
 import Logo from "../Images/LogoImage.png";
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -84,50 +85,65 @@ export default function Login(props) {
                                    <img src={Logo} className="imagebanner" alt="" />
                             </Link>
                      </div>
-                     <div className="login">
-                            <div className="LoginContainer">
-                                   <label className="labels">Email </label><br />
-                                   <input
-                                          className="Inputs"
-                                          type="text"
-                                          autoFocus
-                                          required
-                                          value={email}
-                                          placeholder="Enter your name"
-                                          onChange={(e) => setEmail(e.target.value)}
-                                   />
-                                   <p className="errorMessage">{emailError}</p>
-
-                                   <label className="labels">Password </label><br />
-                                   <input
-                                          className="Inputs"
-                                          type="password"
-                                          required
-                                          value={password}
-                                          placeholder="Enter your password"
-                                          onChange={(e) => setPassword(e.target.value)}
-                                   />
-                                   <p className="errorMessage">{passwordError}</p>
-
-                                   <div className="btnContainer">
-                                          {hasAccount ? (
-                                                 <>
-                                                        <button onClick={SignInFunc} className="btn"> Sign In </button>
-                                                        <p className="para">Don't have an account ? <span className="togglebtn" onClick={() => setHasAccount(!hasAccount)}>Sign Up</span> </p>
-                                                 </>
-                                          ) : (
-                                                        <>
-                                                               <button onClick={SignUpFunc} className="btn">Sign Up</button>
-                                                               <p className="para">Have an account ? <span className="togglebtn" onClick={() => setHasAccount(!hasAccount)}>Sign In</span> </p>
-                                                        </>
-                                                 )
-
-                                          }
+                     {(user) ? (
+                            // alert("You are logged in")
+                            <div className="Popup">
+                                   <div className="popupContainer">
+                                          <div className="tickImage">
+                                                 <img src={Tick} className="popup-Image" alt="" />
+                                          </div>
+                                          <div className="signInContent">
+                                                 <h4 className="signInContentHeading">You are Sign In</h4>
+                                                 <Link to="/" className="signInContentLink">Go to Home</Link>
+                                          </div>
                                    </div>
-
                             </div>
+                     ) : (
+                                   <div className="login">
+                                          <div className="LoginContainer">
+                                                 <label className="labels">Email </label><br />
+                                                 <input
+                                                        className="Inputs"
+                                                        type="text"
+                                                        autoFocus
+                                                        required
+                                                        value={email}
+                                                        placeholder="Enter your name"
+                                                        onChange={(e) => setEmail(e.target.value)}
+                                                 />
+                                                 <p className="errorMessage">{emailError}</p>
 
-                     </div>
+                                                 <label className="labels">Password </label><br />
+                                                 <input
+                                                        className="Inputs"
+                                                        type="password"
+                                                        required
+                                                        value={password}
+                                                        placeholder="Enter your password"
+                                                        onChange={(e) => setPassword(e.target.value)}
+                                                 />
+                                                 <p className="errorMessage">{passwordError}</p>
+
+                                                 <div className="btnContainer">
+                                                        {hasAccount ? (
+                                                               <>
+                                                                      <button onClick={SignInFunc} className="btn"> Sign In </button>
+                                                                      <p className="para">Don't have an account ? <span className="togglebtn" onClick={() => setHasAccount(!hasAccount)}>Sign Up</span> </p>
+                                                               </>
+                                                        ) : (
+                                                                      <>
+                                                                             <button onClick={SignUpFunc} className="btn">Sign Up</button>
+                                                                             <p className="para">Have an account ? <span className="togglebtn" onClick={() => setHasAccount(!hasAccount)}>Sign In</span> </p>
+                                                                      </>
+                                                               )
+
+                                                        }
+                                                 </div>
+
+                                          </div>
+
+                                   </div>
+                            )}
                      <Footer />
 
 

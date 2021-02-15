@@ -6,7 +6,7 @@
        margin-top: 50px;
        margin-bottom: 100px;
 }
-
+ 
 .LoginContainer{
     width: 90%;
     height: 90%;
@@ -87,3 +87,47 @@
    .imagebanner {
        width: 100%;
    }
+   .Popup{
+          width: 100%;
+          height: auto;
+              justify-content: center;
+              text-align: center;
+              align-items: center;
+       }
+.popupContaienr{
+       width: 60%;
+       align-items: center;
+       height: 300px;
+}
+.tickImage{
+       border: 2px solid teal;
+       border-radius: 50px;
+       margin: 20px auto;
+       padding: 0;
+       width: 200px;
+       height: 199px;
+       overflow: hidden;
+       outline: none;
+}
+.popup-image{
+       width: 100%;
+       outline: none;  
+}
+.signInContent{
+       height: 120px;
+       width: 100%;
+}
+.signInContentHeading{
+       color: #fff;
+       text-align: center;
+}
+.signInContentLink{
+       color: teal;
+       text-transform: uppercase;
+       text-decoration: none;
+}
+.signInContentLink:hover{
+       color: teal;
+       text-transform: uppercase;
+       text-decoration: none;
+}

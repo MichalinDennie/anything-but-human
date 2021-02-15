@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/Music.css'
-// import Gallery2 from "../Images/musicgallery2.jpg";
+import Gallery2 from "../Images/musicgallery2.jpg";
 export default function Music() {
        return (
               <div className="music" id="music">
@@ -11,7 +11,7 @@ export default function Music() {
                      <div className="ImageGallery">
                             <div className="imageCard">
                                    <div className="imgSection">
-                                          {/* <img src={Gallery2} alt="" className= /> */}
+                                          <img src={Gallery2} alt="" className="musicImage" />
                                    </div>
                                    <div className="streamSection">
                                           <div className="Stream">

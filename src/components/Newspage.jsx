@@ -22,7 +22,9 @@ export default function Newspage() {
                                    </button>
                             </div>
                             <div className="headerImageLogo">
-                                   <img src={Logo} className="imagebanner" alt="" />
+                                   <Link to="/">
+                                          <img src={Logo} className="imagebanner" alt="" />
+                                   </Link>
                             </div>
                             <div className="NewsHeading">
                                    <h1 className="NewsHeadingText">NEWS</h1>
